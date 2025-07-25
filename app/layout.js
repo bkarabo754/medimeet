@@ -4,6 +4,8 @@ import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/header';
 import { ClerkProvider } from '@clerk/nextjs';
 import { dark } from '@clerk/themes';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,11 +28,22 @@ export default function RootLayout({ children }) {
             <Header />
             <main className="min-h-screen">{children}</main>
             <footer className="bg-muted/50 py-12">
-              <div className="container mx-auto px-4 text-center text-gray-200">
-                <p>
-                  Copyright © {new Date().getFullYear()} MediMeet (Pty) Ltd.
-                  All rights reserved.
-                </p>
+              <div className="container mx-auto px-4 flex text-gray-200">
+                <div className="flex items-center gap-4">
+                  <Link href="/">
+                    <Image
+                      src="/logo-single.png"
+                      alt="Medimeet Logo"
+                      width={200}
+                      height={60}
+                      className="h-10 w-auto object-contain"
+                    />
+                  </Link>
+                  <p className="text-sm">
+                    Copyright © {new Date().getFullYear()} MediMeet (Pty) Ltd.
+                    All rights reserved.
+                  </p>
+                </div>
               </div>
             </footer>
           </ThemeProvider>

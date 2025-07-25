@@ -124,6 +124,7 @@
 .gradient {
   @apply bg-gradient-to-b from-red-500 to-red-400;
 }
+
 .gradient-title {
-  @apply gradient font-bold text-transparent bg-clip-text pb-1 pr-2;
+  @apply bg-gradient-to-b from-red-500 to-red-400 font-bold text-transparent bg-clip-text pb-1 pr-2;
 }
