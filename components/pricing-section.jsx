@@ -4,6 +4,7 @@ import { Badge } from './ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Stethoscope } from 'lucide-react';
 import { creditBenefits } from '@/lib/data';
+import Pricing from './pricing';
 
 const PricingSection = () => {
   return (
@@ -27,7 +28,7 @@ const PricingSection = () => {
 
         <div className="mx-auto">
           {/* Clerk Pricing Table */}
-          {/* <Pricing /> */}
+          <Pricing />
 
           {/* Description */}
           <Card className="mt-12 bg-muted/20 border-red-900/30">
