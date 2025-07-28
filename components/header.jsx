@@ -34,7 +34,7 @@ const Header = async () => {
             alt="Medimeet Logo"
             width={200}
             height={60}
-            className="h-10 w-auto object-contain"
+            className="h-10 w-auto object-contain text-red-500"
           />
         </Link>
 
