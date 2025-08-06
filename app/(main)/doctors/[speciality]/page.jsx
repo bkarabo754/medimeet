@@ -3,8 +3,8 @@
 import { useParams } from 'next/navigation';
 
 const SpecialityPage = () => {
-  const { speciality } = useParams();
-  return <div>SpecialityPage: {speciality}</div>;
+  const { specialty } = useParams();
+  return <div>SpecialityPage: {specialty}</div>;
 };
 
 export default SpecialityPage;

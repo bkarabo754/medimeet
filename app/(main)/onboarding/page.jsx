@@ -164,7 +164,7 @@ export default function OnboardingPage() {
 
           <form onSubmit={handleSubmit(onDoctorSubmit)} className="space-y-6">
             <div className="space-y-2">
-              <Label htmlFor="specialty">Medical Specialty</Label>
+              <Label htmlFor="specialty">Medical Speciality</Label>
               <Select
                 value={specialtyValue}
                 onValueChange={(value) => setValue('specialty', value)}
